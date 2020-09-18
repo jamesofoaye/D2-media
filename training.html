@@ -46,8 +46,9 @@
         </nav>
         <div class="jumbotron hero"
             style="background: url(./assets/img/young-girl-working-on-a-computer@2x.png);margin-bottom: 0px;">
-            <h1 class="hero-title">D2 TRAINING INSTITUTE</h1>
-            <p class="hero-subtitle" style="background-color: rgba(0,0,0,0);font-size: 20px;text-align: center;">Get
+            <h1 class="hero-title1">D2 TRAINING INSTITUTE</h1>
+            <p class="hero-subtitle paragraph"
+                style="background-color: rgba(0,0,0,0);font-size: 20px;text-align: center;">Get
                 enrolled on our 12 weeks Practical IT skill training to be equipped with Hands-On practical IT skill
                 that can make you gainfully employed and generate an extra income for you...We have weekend and weekdays
                 sessions. D2 Training Institute,<strong>&nbsp;Equipping one to become the next IT Guru!!!</strong><br>
@@ -103,35 +104,38 @@
                                     aria-hidden="true">X</span></button>
                         </div>
                         <div class="modal-body">
-                            <form>
+                            <form action="https://send.pageclip.co/5G5QZ8c6Y0Fa3PscUoh6Oi2OxFirhFK4/Enrollment-Form"
+                                class="pageclip-form" method="post">
                                 <div class="form-group" style="margin-bottom: 0em">
                                     <label for="selectCourse">Select Course:</label>
-                                    <select class="form-control" id="selectCourse">
-                                        <option selected>Select Course</option>
-                                        <option>Introduction to Computer</option>
-                                        <option>Graphic Designing</option>
-                                        <option>Website and App Development</option>
-                                        <option>Microsoft Office Suite</option>
+                                    <select class="form-control" id="selectCourse" name="Course">
+                                        <option>Select Course</option>
+                                        <option value="Introduction to Computer">Introduction to Computer</option>
+                                        <option value="Graphic Designing">Graphic Designing</option>
+                                        <option value="Website and App Development">Website and App Development</option>
+                                        <option value="Microsoft Office Suite">Microsoft Office Suite</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="name">Name:</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name...">
+                                    <input type="text" name="Name" class="form-control" id="name"
+                                        placeholder="Enter your name..." required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phoneNumber">Phone Number:</label>
-                                    <input type="tel" class="form-control" id="phoneNumber"
-                                        placeholder="Enter your number...">
+                                    <input type="tel" name="Phone number" class="form-control" id="phoneNumber"
+                                        placeholder="Enter your number..." required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email:</label>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" name="Email" class="form-control" id="email"
                                         placeholder="Enter your email...">
                                 </div>
-
-                        </div>
-                        <div class="modal-footer"><button class="btn" type="submit"
-                                style="border-color: #ff00ff;color: #ffffff;font-size: 17px;background-color: #ff00ff;">Enroll</button>
+                                <div class="modal-footer"><button class="btn pageclip-form__submit" type="submit"
+                                        style="border-color: #ff00ff;color: #ffffff;font-size: 17px;background-color: #ff00ff;"><span>Enroll</span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -198,7 +202,7 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/bs-init.js"></script>
+    <script src="./assets/js/scroll-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js"></script>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <script src="./assets/js/year.js"></script>
